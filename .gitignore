@@ -1,0 +1,35 @@
+# Built executables only (explicit paths — do not use **/name when name is also a directory)
+flush-reload/attack
+spectre-v1/spectre_v1
+spectre-v2/spectre_v2
+spectre-v4/spectre_v4
+prime-probe/prime_probe
+evict-time/evict_time
+evict-reload/evict_reload
+flush-flush/flush_flush
+aes-timing/aes_timing
+timing-attack/timing_attack
+cache-timing-demo/timing
+meltdown/meltdown_receiver
+mds/mds_stub
+rowhammer/rowhammer
+netspectre/netspectre_local
+branchscope/branchscope
+
+*.exe
+*.o
+
+# Legacy binaries if left in repo root
+/attack
+/spectre_v1
+/spectre
+/prime_probe
+/evict_time
+/timing_attack
+/timing
+/test
+
+.DS_Store
+Thumbs.db
+*.swp
+*~
