@@ -1,6 +1,6 @@
 # Microarchitectural Security PoCs
 
-Educational **x86-64 / Linux (WSL)** proof-of-concept code for **cache side channels**, **transient-execution (Spectre-style) demos**, and **software timing leaks**. Use only on systems you own or are explicitly authorized to test.
+Educational **x86-64 / Linux** proof-of-concept code for **cache side channels**, **transient-execution (Spectre-style) demos**, and **software timing leaks**. Use only on systems you own or are explicitly authorized to test.
 
 This document doubles as a **short survey**: it places the implemented demos in the wider landscape of **microarchitectural attacks** and notes **when and how** major ideas entered the literature or public disclosure.
 
@@ -37,7 +37,7 @@ Each attack type has its **own directory** with a local **`README.md`** (build, 
 
 The list below is **representative**, not exhaustive. Dates refer to **widely cited public disclosure** (paper, report, or coordinated advisory); parallel discovery or industry-private knowledge may exist.
 
-### 2.1 Cache-based timing and contention (same-address-space or shared cache)
+### 2.1 Cache-based timing and contention
 
 | Attack / pattern | Idea (one line) | Typical “discovered / named” context | In this repo |
 |------------------|-----------------|----------------------------------------|--------------|
@@ -52,7 +52,7 @@ The list below is **representative**, not exhaustive. Dates refer to **widely ci
 
 ---
 
-### 2.2 Transient execution (speculative but architecturally “undone”)
+### 2.2 Transient execution
 
 | Attack | Idea | Public disclosure context | In this repo |
 |--------|------|---------------------------|--------------|
@@ -114,7 +114,7 @@ The list below is **representative**, not exhaustive. Dates refer to **widely ci
 ## 4. Requirements
 
 - **GCC** or **Clang**, **x86-64**, `x86intrin.h` (`__rdtscp`, `_mm_clflush`).
-- **Linux** or **WSL2** recommended.
+- **Linux** recommended.
 
 ---
 
@@ -166,4 +166,18 @@ See each subdirectory **`README.md`** for details.
 
 ## 8. License
 
-Educational use and modification are encouraged; retain attribution if you redistribute derived work.
+### MIT License
+
+This project is released under the **[MIT License](https://opensource.org/licenses/MIT)**. The full legal text is in [`LICENSE`](LICENSE) in the repository root (2026 Shitong Guo).
+
+### Use of this repository
+
+These programs are **teaching and research aids** that implement or sketch **microarchitectural attacks**. They are provided **“as is”**, **without warranty of any kind**. Contributors are **not** responsible for misuse, hardware stress, data loss, or legal issues arising from use outside **lawful, authorized** contexts (e.g. your own lab, coursework, or explicit permission).
+
+### Suggested GitHub metadata
+
+| Field | Suggestion |
+|-------|------------|
+| **Description** | Use the **GitHub “About” description** blockquoted at the **top of this README**. |
+| **Website** | *(optional)* Link to a course or blog post if you publish one. |
+| **Topics** | `security`, `side-channel`, `spectre`, `meltdown`, `flush-reload`, `cache-attack`, `microarchitecture`, `x86-64`, `education`, `proof-of-concept`, `wsl` |
