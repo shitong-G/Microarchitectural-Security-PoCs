@@ -143,7 +143,7 @@ See each subdirectory **`README.md`** for details.
 
 ---
 
-## 6. Further reading (entry points)
+## 6. Further reading
 
 - **Kocher et al., “Spectre Attacks: Exploiting Speculative Execution,”** IEEE S&P **2019** (expanded from the **Jan 2018** disclosure).  
 - **Lipp et al., “Meltdown: Reading Kernel Memory from User Space,”** USENIX Security **2018**.  
@@ -155,29 +155,8 @@ See each subdirectory **`README.md`** for details.
 
 ---
 
-## 7. Reproducibility and ethics
-
-- **VMs / WSL** add noise; **Spectre** may be unreliable vs **Flush+Reload** on the same machine.
-- Use **`-O0`** for teaching builds so the compiler does not optimize away channel-relevant accesses.
-- **Mitigations** (retpoline, IBRS, microcode, safe timers, etc.) may block or weaken demos; **success is not guaranteed**.
-- Use this code **only** for research and education on **authorized** systems.
-
----
-
-## 8. License
+## 7. License
 
 ### MIT License
 
 This project is released under the **[MIT License](https://opensource.org/licenses/MIT)**. The full legal text is in [`LICENSE`](LICENSE) in the repository root (2026 Shitong Guo).
-
-### Use of this repository
-
-These programs are **teaching and research aids** that implement or sketch **microarchitectural attacks**. They are provided **“as is”**, **without warranty of any kind**. Contributors are **not** responsible for misuse, hardware stress, data loss, or legal issues arising from use outside **lawful, authorized** contexts (e.g. your own lab, coursework, or explicit permission).
-
-### Suggested GitHub metadata
-
-| Field | Suggestion |
-|-------|------------|
-| **Description** | Use the **GitHub “About” description** blockquoted at the **top of this README**. |
-| **Website** | *(optional)* Link to a course or blog post if you publish one. |
-| **Topics** | `security`, `side-channel`, `spectre`, `meltdown`, `flush-reload`, `cache-attack`, `microarchitecture`, `x86-64`, `education`, `proof-of-concept`, `wsl` |
